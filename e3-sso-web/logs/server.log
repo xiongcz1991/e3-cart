@@ -1,0 +1,927 @@
+
+
+[INFO ] 2017-09-15 13:01:48,505 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-sso-web': initialization started
+
+
+[INFO ] 2017-09-15 13:01:48,532 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-sso-web-servlet': startup date [Fri Sep 15 13:01:48 GMT+08:00 2017]; root of context hierarchy
+
+
+[INFO ] 2017-09-15 13:01:48,571 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-09-15 13:01:49,416 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-09-15 13:01:49,568 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2017-09-15 13:01:49,578 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-09-15 13:01:50,000 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.e3mall.sso.service.TokenService=empty://192.168.213.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=4592&side=provider&timeout=600000&timestamp=1505451689989, cn.e3mall.service.ItemService=empty://192.168.213.1:20880/cn.e3mall.service.ItemService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=reshelfItem,getItemList,instockItem,deleteItem,getItemDescById,addItem,getItemById,updateItem&pid=4732&side=provider&timeout=600000&timestamp=1505356866217, cn.e3mall.sso.service.RegisterService=empty://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=4592&side=provider&timeout=600000&timestamp=1505451689146, cn.e3mall.search.service.SearchItemService=empty://192.168.213.1:20882/cn.e3mall.search.service.SearchItemService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=getIndexList&pid=5604&side=provider&timeout=600000&timestamp=1505356837445, cn.e3mall.content.service.ContentService=empty://192.168.213.1:20881/cn.e3mall.content.service.ContentService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,deleteContent,saveContent,getContentListByCid&pid=3904&side=provider&timeout=600000&timestamp=1505356897193, cn.e3mall.search.service.SearchService=empty://192.168.213.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=searchItemList&pid=5604&side=provider&timeout=600000&timestamp=1505356838015, cn.e3mall.content.service.ContentCategoryService=empty://192.168.213.1:20881/cn.e3mall.content.service.ContentCategoryService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCategoryService&methods=updateContentCategory,deleteContentCategory,getContentCatList,addContentCategory&pid=3904&side=provider&timeout=600000&timestamp=1505356895390, cn.e3mall.sso.service.LoginService=empty://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=4592&side=provider&timeout=600000&timestamp=1505451689956, cn.e3mall.service.ItemCatService=empty://192.168.213.1:20880/cn.e3mall.service.ItemCatService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=4732&side=provider&timeout=600000&timestamp=1505356866715}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-09-15 13:01:50,015 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-09-15 13:01:50,037 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-09-15 13:01:50,038 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=LS--20160503IGQ
+
+
+[INFO ] 2017-09-15 13:01:50,038 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2017-09-15 13:01:50,038 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-09-15 13:01:50,039 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2017-09-15 13:01:50,039 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Tool\MavenRe\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\Tool\IDEA\IntelliJ\lib\idea_rt.jar
+
+
+[INFO ] 2017-09-15 13:01:50,039 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\mysql\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;D:\ssvn\SVN\bin;D:\ssvn\TortoiseSVN\bin;D:\Tool\MavenRe\apache-maven-3.3.9\bin;D:\Ver\win64;.
+
+
+[INFO ] 2017-09-15 13:01:50,039 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-09-15 13:01:50,040 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-09-15 13:01:50,041 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-09-15 13:01:50,041 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-09-15 13:01:50,041 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-09-15 13:01:50,041 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2017-09-15 13:01:50,042 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-09-15 13:01:50,042 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\MyWorkSp\e3mall\e3-sso-web
+
+
+[INFO ] 2017-09-15 13:01:50,043 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@eaaea4e
+
+
+[INFO ] 2017-09-15 13:01:50,072 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-09-15 13:01:50,074 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2017-09-15 13:01:50,476 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x15e8596029d0001, negotiated timeout = 30000
+
+
+[INFO ] 2017-09-15 13:01:50,478 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-09-15 13:01:50,508 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451709922, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:01:51,407 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451709922, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:01:51,960 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451709922, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=4592&side=provider&timeout=600000&timestamp=1505451689956, empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451709922, empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451709922], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:01:53,629 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.213.1:20883 from NettyClient 192.168.213.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x3e86c5db, /192.168.213.1:2733 => /192.168.213.1:20883]], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:01:53,630 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LS--20160503IGQ/192.168.213.1 connect to the server /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:01:55,382 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.e3mall.sso.service.LoginService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-sso-web&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505451709922, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:01:55,411 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451715399, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:01:55,621 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451715399, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:01:56,499 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451715399, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=4592&side=provider&timeout=600000&timestamp=1505451689146, empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451715399, empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451715399], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:01:56,513 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.e3mall.sso.service.RegisterService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-sso-web&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505451715399, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:01:56,687 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/login],methods=[POST]}" onto public cn.e3mall.common.pojo.E3Result cn.e3mall.sso.controller.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+
+
+[INFO ] 2017-09-15 13:01:56,689 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/register],methods=[POST]}" onto public cn.e3mall.common.pojo.E3Result cn.e3mall.sso.controller.RegisterController.register(cn.e3mall.pojo.TbUser)
+
+
+[INFO ] 2017-09-15 13:01:56,689 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/check/{param}/{type}]}" onto public cn.e3mall.common.pojo.E3Result cn.e3mall.sso.controller.RegisterController.checkData(java.lang.String,java.lang.Integer)
+
+
+[INFO ] 2017-09-15 13:01:56,690 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/page/register]}" onto public java.lang.String cn.e3mall.sso.controller.RegisterController.showRegister()
+
+
+[INFO ] 2017-09-15 13:02:00,122 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-sso-web-servlet': startup date [Fri Sep 15 13:01:48 GMT+08:00 2017]; root of context hierarchy
+
+
+[INFO ] 2017-09-15 13:02:00,185 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-sso-web-servlet': startup date [Fri Sep 15 13:01:48 GMT+08:00 2017]; root of context hierarchy
+
+
+[INFO ] 2017-09-15 13:02:00,292 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+
+
+[INFO ] 2017-09-15 13:02:00,298 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+
+
+[INFO ] 2017-09-15 13:02:00,305 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+
+
+[INFO ] 2017-09-15 13:02:00,395 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-sso-web': initialization completed in 11887 ms
+
+
+[WARN ] 2017-09-15 13:06:24,404 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'e3-sso-web'
+
+
+[WARN ] 2017-09-15 13:06:24,474 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'e3-sso-web'
+
+
+[INFO ] 2017-09-15 13:09:42,798 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451715399, urls: [empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451715399], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:09:42,801 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451709922, urls: [empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451709922], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:09:42,802 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x3e86c5db, /192.168.213.1:2733 => /192.168.213.1:20883], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:09:42,805 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.213.1:20883,url:dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505451709922, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:11:40,256 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451715399, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6924&side=provider&timeout=600000&timestamp=1505452299740], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:11:40,262 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.213.1:20883 from NettyClient 192.168.213.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x2caf6263, /192.168.213.1:2794 => /192.168.213.1:20883]], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:11:40,263 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LS--20160503IGQ/192.168.213.1 connect to the server /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:11:40,383 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505451709922, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6924&side=provider&timeout=600000&timestamp=1505452300359], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[WARN ] 2017-09-15 13:13:10,600 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/page/login] in DispatcherServlet with name 'e3-sso-web'
+
+
+[WARN ] 2017-09-15 13:17:32,962 method:org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.handleHttpRequestMethodNotSupported(DefaultHandlerExceptionResolver.java:208)
+Request method 'GET' not supported
+
+
+[WARN ] 2017-09-15 13:18:53,905 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/login] in DispatcherServlet with name 'e3-sso-web'
+
+
+[WARN ] 2017-09-15 13:19:09,315 method:com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:79)
+ [DUBBO] Although retry the method checkData in the service cn.e3mall.sso.service.RegisterService was successful by the provider 192.168.213.1:20883, but there have been failed providers [192.168.213.1:20883] (1/1) from the registry 192.168.25.128:2181 on the consumer 192.168.213.1 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: checkData, provider: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505451715399, cause: Waiting server-side response timeout by scan timer. start time: 2017-09-15 13:09:09.282, end time: 2017-09-15 13:19:09.302, client elapsed: 0 ms, server elapsed: 600020 ms, timeout: 600000 ms, request: Request [id=8, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=checkData, parameterTypes=[class java.lang.String, int], arguments=[jackaaa, 1], attachments={path=cn.e3mall.sso.service.RegisterService, interface=cn.e3mall.sso.service.RegisterService, timeout=600000, version=0.0.0}]], channel: 192.168.213.1:0 -> /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: checkData, provider: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6832&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505451715399, cause: Waiting server-side response timeout by scan timer. start time: 2017-09-15 13:09:09.282, end time: 2017-09-15 13:19:09.302, client elapsed: 0 ms, server elapsed: 600020 ms, timeout: 600000 ms, request: Request [id=8, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=checkData, parameterTypes=[class java.lang.String, int], arguments=[jackaaa, 1], attachments={path=cn.e3mall.sso.service.RegisterService, interface=cn.e3mall.sso.service.RegisterService, timeout=600000, version=0.0.0}]], channel: 192.168.213.1:0 -> /192.168.213.1:20883
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy1.checkData(proxy1.java)
+	at cn.e3mall.sso.controller.RegisterController.checkData(RegisterController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2017-09-15 13:09:09.282, end time: 2017-09-15 13:19:09.302, client elapsed: 0 ms, server elapsed: 600020 ms, timeout: 600000 ms, request: Request [id=8, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=checkData, parameterTypes=[class java.lang.String, int], arguments=[jackaaa, 1], attachments={path=cn.e3mall.sso.service.RegisterService, interface=cn.e3mall.sso.service.RegisterService, timeout=600000, version=0.0.0}]], channel: 192.168.213.1:0 -> /192.168.213.1:20883
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.returnFromResponse(DefaultFuture.java:188)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:110)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	... 55 more
+
+
+[INFO ] 2017-09-15 13:22:37,550 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-sso-web': initialization started
+
+
+[INFO ] 2017-09-15 13:22:37,574 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-sso-web-servlet': startup date [Fri Sep 15 13:22:37 GMT+08:00 2017]; root of context hierarchy
+
+
+[INFO ] 2017-09-15 13:22:37,626 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-09-15 13:22:38,125 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-09-15 13:22:38,280 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2017-09-15 13:22:38,290 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-09-15 13:22:38,809 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.e3mall.sso.service.TokenService=empty://192.168.213.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6924&side=provider&timeout=600000&timestamp=1505452300395, cn.e3mall.service.ItemService=empty://192.168.213.1:20880/cn.e3mall.service.ItemService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=reshelfItem,getItemList,instockItem,deleteItem,getItemDescById,addItem,getItemById,updateItem&pid=4732&side=provider&timeout=600000&timestamp=1505356866217, cn.e3mall.sso.service.RegisterService=empty://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6924&side=provider&timeout=600000&timestamp=1505452299740, cn.e3mall.search.service.SearchItemService=empty://192.168.213.1:20882/cn.e3mall.search.service.SearchItemService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=getIndexList&pid=5604&side=provider&timeout=600000&timestamp=1505356837445, cn.e3mall.content.service.ContentService=empty://192.168.213.1:20881/cn.e3mall.content.service.ContentService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,deleteContent,saveContent,getContentListByCid&pid=3904&side=provider&timeout=600000&timestamp=1505356897193, cn.e3mall.search.service.SearchService=empty://192.168.213.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=searchItemList&pid=5604&side=provider&timeout=600000&timestamp=1505356838015, cn.e3mall.content.service.ContentCategoryService=empty://192.168.213.1:20881/cn.e3mall.content.service.ContentCategoryService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCategoryService&methods=updateContentCategory,deleteContentCategory,getContentCatList,addContentCategory&pid=3904&side=provider&timeout=600000&timestamp=1505356895390, cn.e3mall.sso.service.LoginService=empty://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6924&side=provider&timeout=600000&timestamp=1505452300359, cn.e3mall.service.ItemCatService=empty://192.168.213.1:20880/cn.e3mall.service.ItemCatService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=4732&side=provider&timeout=600000&timestamp=1505356866715}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-09-15 13:22:38,825 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-09-15 13:22:38,843 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-09-15 13:22:38,843 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=LS--20160503IGQ
+
+
+[INFO ] 2017-09-15 13:22:38,844 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2017-09-15 13:22:38,844 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-09-15 13:22:38,844 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2017-09-15 13:22:38,844 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Tool\MavenRe\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\Tool\IDEA\IntelliJ\lib\idea_rt.jar
+
+
+[INFO ] 2017-09-15 13:22:38,844 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\mysql\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;D:\ssvn\SVN\bin;D:\ssvn\TortoiseSVN\bin;D:\Tool\MavenRe\apache-maven-3.3.9\bin;D:\Ver\win64;.
+
+
+[INFO ] 2017-09-15 13:22:38,845 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-09-15 13:22:38,845 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-09-15 13:22:38,846 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-09-15 13:22:38,846 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-09-15 13:22:38,846 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-09-15 13:22:38,847 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2017-09-15 13:22:38,847 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-09-15 13:22:38,847 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\MyWorkSp\e3mall\e3-sso-web
+
+
+[INFO ] 2017-09-15 13:22:38,848 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@49966108
+
+
+[INFO ] 2017-09-15 13:22:38,905 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-09-15 13:22:38,907 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2017-09-15 13:22:38,915 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x15e8596029d0003, negotiated timeout = 30000
+
+
+[INFO ] 2017-09-15 13:22:38,917 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-09-15 13:22:38,947 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:22:39,002 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:22:39,039 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6924&side=provider&timeout=600000&timestamp=1505452300359, empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:22:39,283 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.213.1:20883 from NettyClient 192.168.213.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x7af3a27a, /192.168.213.1:2923 => /192.168.213.1:20883]], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:22:39,283 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LS--20160503IGQ/192.168.213.1 connect to the server /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:22:39,370 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.e3mall.sso.service.LoginService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-sso-web&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452958660, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:22:39,401 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:22:39,411 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:22:39,434 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6924&side=provider&timeout=600000&timestamp=1505452299740, empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:22:39,436 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.e3mall.sso.service.RegisterService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-sso-web&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:22:39,631 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/page/login]}" onto public java.lang.String cn.e3mall.sso.controller.LoginController.showLogin()
+
+
+[INFO ] 2017-09-15 13:22:39,633 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/login],methods=[POST]}" onto public cn.e3mall.common.pojo.E3Result cn.e3mall.sso.controller.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+
+
+[INFO ] 2017-09-15 13:22:39,634 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/register],methods=[POST]}" onto public cn.e3mall.common.pojo.E3Result cn.e3mall.sso.controller.RegisterController.register(cn.e3mall.pojo.TbUser)
+
+
+[INFO ] 2017-09-15 13:22:39,635 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/page/register]}" onto public java.lang.String cn.e3mall.sso.controller.RegisterController.showRegister()
+
+
+[INFO ] 2017-09-15 13:22:39,635 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/check/{param}/{type}]}" onto public cn.e3mall.common.pojo.E3Result cn.e3mall.sso.controller.RegisterController.checkData(java.lang.String,java.lang.Integer)
+
+
+[INFO ] 2017-09-15 13:22:40,496 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-sso-web-servlet': startup date [Fri Sep 15 13:22:37 GMT+08:00 2017]; root of context hierarchy
+
+
+[INFO ] 2017-09-15 13:22:40,559 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-sso-web-servlet': startup date [Fri Sep 15 13:22:37 GMT+08:00 2017]; root of context hierarchy
+
+
+[INFO ] 2017-09-15 13:22:40,703 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+
+
+[INFO ] 2017-09-15 13:22:40,710 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+
+
+[INFO ] 2017-09-15 13:22:40,716 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+
+
+[INFO ] 2017-09-15 13:22:40,806 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-sso-web': initialization completed in 3253 ms
+
+
+[INFO ] 2017-09-15 13:24:36,825 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:24:36,830 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:24:36,831 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x7af3a27a, /192.168.213.1:2923 => /192.168.213.1:20883], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:24:36,835 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.213.1:20883,url:dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452958660, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:24:56,678 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6924&side=provider&timeout=600000&timestamp=1505452300359], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:24:56,681 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.213.1:20883 from NettyClient 192.168.213.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xe218202a, /192.168.213.1:2941 => /192.168.213.1:20883]], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:24:56,686 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LS--20160503IGQ/192.168.213.1 connect to the server /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:24:56,700 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6924&side=provider&timeout=600000&timestamp=1505452299740], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:26:33,064 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.213.1:20883,url:dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452958660, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[WARN ] 2017-09-15 13:26:35,716 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.213.1:20883 find error . url: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452958660, dubbo version: 2.5.3, current host: 192.168.213.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452958660) failed to connect to server /192.168.213.1:20883, error message is:Connection refused: no further information: /192.168.213.1:20883
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.213.1:20883
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2017-09-15 13:26:56,825 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:26:56,829 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:32:38,573 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6896&side=provider&timeout=600000&timestamp=1505453558071], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:32:38,575 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.213.1:20883 from NettyClient 192.168.213.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x78f2780f, /192.168.213.1:2991 => /192.168.213.1:20883]], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:32:38,576 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LS--20160503IGQ/192.168.213.1 connect to the server /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:32:38,680 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6896&side=provider&timeout=600000&timestamp=1505453558637], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:33:38,838 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:33:38,842 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:33:38,843 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x78f2780f, /192.168.213.1:2991 => /192.168.213.1:20883], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:33:38,844 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.213.1:20883,url:dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:33:45,652 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6896&side=provider&timeout=600000&timestamp=1505453558071], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:33:45,655 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.213.1:20883 from NettyClient 192.168.213.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x5e0d125d, /192.168.213.1:3001 => /192.168.213.1:20883]], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:33:45,656 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LS--20160503IGQ/192.168.213.1 connect to the server /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:33:45,665 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6896&side=provider&timeout=600000&timestamp=1505453558637], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:34:10,791 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.213.1:20883,url:dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[WARN ] 2017-09-15 13:34:12,666 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.213.1:20883 find error . url: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389) failed to connect to server /192.168.213.1:20883, error message is:Connection refused: no further information: /192.168.213.1:20883
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.213.1:20883
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2017-09-15 13:34:36,839 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:34:36,843 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:35:06,793 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6664&side=provider&timeout=600000&timestamp=1505453706262], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:35:06,795 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.213.1:20883 from NettyClient 192.168.213.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xb40ec585, /192.168.213.1:3037 => /192.168.213.1:20883]], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:35:06,796 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LS--20160503IGQ/192.168.213.1 connect to the server /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:35:06,891 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6664&side=provider&timeout=600000&timestamp=1505453706856], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:39:28,849 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:39:28,852 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:39:28,853 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0xb40ec585, /192.168.213.1:3037 => /192.168.213.1:20883], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:39:28,854 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.213.1:20883,url:dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:40:02,849 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6664&side=provider&timeout=600000&timestamp=1505453706262], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:40:02,855 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.213.1:20883 from NettyClient 192.168.213.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xd269c7f6, /192.168.213.1:3077 => /192.168.213.1:20883]], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:40:02,855 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LS--20160503IGQ/192.168.213.1 connect to the server /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:40:02,863 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6664&side=provider&timeout=600000&timestamp=1505453706856], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:41:44,853 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:41:44,857 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:41:44,857 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0xd269c7f6, /192.168.213.1:3077 => /192.168.213.1:20883], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:41:44,859 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.213.1:20883,url:dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:42:22,383 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6664&side=provider&timeout=600000&timestamp=1505453706262], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:42:22,388 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.213.1:20883 from NettyClient 192.168.213.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x6ade0cbe, /192.168.213.1:3088 => /192.168.213.1:20883]], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:42:22,389 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LS--20160503IGQ/192.168.213.1 connect to the server /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:42:22,395 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6664&side=provider&timeout=600000&timestamp=1505453706856], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:42:37,001 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.213.1:20883,url:dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[WARN ] 2017-09-15 13:42:39,389 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.213.1:20883 find error . url: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389) failed to connect to server /192.168.213.1:20883, error message is:Connection refused: no further information: /192.168.213.1:20883
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.213.1:20883
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2017-09-15 13:43:02,859 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [empty://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:43:02,862 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [empty://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:44:55,613 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452959389, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6256&side=provider&timeout=600000&timestamp=1505454295041], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:44:55,616 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.213.1:20883 from NettyClient 192.168.213.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xd7c8beed, /192.168.213.1:3129 => /192.168.213.1:20883]], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:44:55,616 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LS--20160503IGQ/192.168.213.1 connect to the server /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[INFO ] 2017-09-15 13:44:55,714 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.213.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timestamp=1505452958660, urls: [dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6256&side=provider&timeout=600000&timestamp=1505454295689], dubbo version: 2.5.3, current host: 192.168.213.1
+
+
+[WARN ] 2017-09-15 13:48:58,111 method:com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:79)
+ [DUBBO] Although retry the method userLogin in the service cn.e3mall.sso.service.LoginService was successful by the provider 192.168.213.1:20883, but there have been failed providers [192.168.213.1:20883] (1/1) from the registry 192.168.25.128:2181 on the consumer 192.168.213.1 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: userLogin, provider: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso-web&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452958660, cause: Waiting server-side response timeout. start time: 2017-09-15 13:38:58.075, end time: 2017-09-15 13:48:58.097, client elapsed: 0 ms, server elapsed: 600022 ms, timeout: 600000 ms, request: Request [id=11, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=userLogin, parameterTypes=[class java.lang.String, class java.lang.String], arguments=[jack, 1234], attachments={path=cn.e3mall.sso.service.LoginService, interface=cn.e3mall.sso.service.LoginService, timeout=600000, version=0.0.0}]], channel: 192.168.213.1:0 -> /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: userLogin, provider: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso-web&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452958660, cause: Waiting server-side response timeout. start time: 2017-09-15 13:38:58.075, end time: 2017-09-15 13:48:58.097, client elapsed: 0 ms, server elapsed: 600022 ms, timeout: 600000 ms, request: Request [id=11, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=userLogin, parameterTypes=[class java.lang.String, class java.lang.String], arguments=[jack, 1234], attachments={path=cn.e3mall.sso.service.LoginService, interface=cn.e3mall.sso.service.LoginService, timeout=600000, version=0.0.0}]], channel: 192.168.213.1:0 -> /192.168.213.1:20883
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.userLogin(proxy0.java)
+	at cn.e3mall.sso.controller.LoginController.login(LoginController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:871)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2017-09-15 13:38:58.075, end time: 2017-09-15 13:48:58.097, client elapsed: 0 ms, server elapsed: 600022 ms, timeout: 600000 ms, request: Request [id=11, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=userLogin, parameterTypes=[class java.lang.String, class java.lang.String], arguments=[jack, 1234], attachments={path=cn.e3mall.sso.service.LoginService, interface=cn.e3mall.sso.service.LoginService, timeout=600000, version=0.0.0}]], channel: 192.168.213.1:0 -> /192.168.213.1:20883
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:107)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	... 55 more
+
+
+[WARN ] 2017-09-15 13:51:22,120 method:com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:79)
+ [DUBBO] Although retry the method userLogin in the service cn.e3mall.sso.service.LoginService was successful by the provider 192.168.213.1:20883, but there have been failed providers [192.168.213.1:20883] (1/1) from the registry 192.168.25.128:2181 on the consumer 192.168.213.1 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: userLogin, provider: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso-web&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452958660, cause: Waiting server-side response timeout. start time: 2017-09-15 13:41:22.089, end time: 2017-09-15 13:51:22.112, client elapsed: 1 ms, server elapsed: 600022 ms, timeout: 600000 ms, request: Request [id=13, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=userLogin, parameterTypes=[class java.lang.String, class java.lang.String], arguments=[jack, 1234], attachments={path=cn.e3mall.sso.service.LoginService, interface=cn.e3mall.sso.service.LoginService, timeout=600000, version=0.0.0}]], channel: 192.168.213.1:0 -> /192.168.213.1:20883, dubbo version: 2.5.3, current host: 192.168.213.1
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: userLogin, provider: dubbo://192.168.213.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso-web&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452958660, cause: Waiting server-side response timeout. start time: 2017-09-15 13:41:22.089, end time: 2017-09-15 13:51:22.112, client elapsed: 1 ms, server elapsed: 600022 ms, timeout: 600000 ms, request: Request [id=13, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=userLogin, parameterTypes=[class java.lang.String, class java.lang.String], arguments=[jack, 1234], attachments={path=cn.e3mall.sso.service.LoginService, interface=cn.e3mall.sso.service.LoginService, timeout=600000, version=0.0.0}]], channel: 192.168.213.1:0 -> /192.168.213.1:20883
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.userLogin(proxy0.java)
+	at cn.e3mall.sso.controller.LoginController.login(LoginController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:871)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2017-09-15 13:41:22.089, end time: 2017-09-15 13:51:22.112, client elapsed: 1 ms, server elapsed: 600022 ms, timeout: 600000 ms, request: Request [id=13, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=userLogin, parameterTypes=[class java.lang.String, class java.lang.String], arguments=[jack, 1234], attachments={path=cn.e3mall.sso.service.LoginService, interface=cn.e3mall.sso.service.LoginService, timeout=600000, version=0.0.0}]], channel: 192.168.213.1:0 -> /192.168.213.1:20883
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:107)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	... 55 more
+
+
+[INFO ] 2017-09-15 13:51:58,800 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.213.1:20883,url:dubbo://192.168.213.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.RegisterService&methods=register,checkData&pid=6224&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1505452959389, dubbo version: 2.5.3, current host: 192.168.213.1
